@@ -1,0 +1,23 @@
+====== STARTING MYSQL SERVER ======
+- Window key + R
+- search and Open: services.msc
+- find and Start: MYSQL80
+
+====== LOGIN TO MYSQL SERVER ======
+- Find the folder of the MySQL that you have installed
+  then go to the bin Folder.
+- In the folder path type: cmd
+- Login into MySQL by typing: mysql -u root -p
+  it will then display > Enter password:
+- The password will depend by you entering the password
+  during the installation of the mySQL server.
+
+  NOW YOU CAN USE/MODIFY THE DATA.
+
+====== CREATING A DATABASE ======
+- Command: CREATE DATABASE database_Name;
+// The database_Name is the name that you want to assign the database named.
+// To Know that you created the database enter the Command: SHOW DATABASES;
+// The semi-column is needed.
+
+// TO KNOW MORE COMMAND VISIT: https://www.w3schools.com/mysql/default.asp

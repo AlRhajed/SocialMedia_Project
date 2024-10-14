@@ -1,7 +1,11 @@
 
 // ================= INSTRUCTIONS =================
-// 1. Start mySQL(DataBase) server
-// - Shift + Window key
+// REQUIREMENT:
+// INSTALL: MYSQL COMMUNITY SERVER
+// INSTALL: NODEJS
+
+// 1. Start mySQL server
+// - Window key + R
 // - search and Open: services.msc
 // - find and Start: MYSQL80
 
@@ -14,20 +18,28 @@
 //   this will open the command line, and type: npm run DevStart
 
 // 3. Open your WebSite through any Browser(Google, Opera, Microsoft browser)
-// - Type: localhost:3000
-
-// ==============================================================================
+// - Type in the searchbar: localhost:3000
+// ===================================================
 
 const express = require("express");
 const mySql = require("mysql2");
 const app = express()
 
+// =============== WARNING WARNING WARNING ===================
+// - Inside this variable YOU HAVE TO CHANGE THE PASSWORD, the password
+//   will depend on you after the installation of the MySQL Server
+
+// - YOU MAY HAVE CHANGE THE DATABASE NAME this depend if you have created
+//   a database or already have one.
+// - If you want to create a database, in this folder there is a text file named: MYSQL(INSTRUCTION)
+
+// ONLY CHANGE THE STRING THAT HAS THE COMMENT (CHANGEABLE)
 var connection = mySql.createConnection(
 {
     host: "localhost",
     user: "root",
-    password: "Group2",
-    database: "accounts"
+    password: "Group2", // your password (CHANGEABLE)
+    database: "accounts" // The DataBase name you want to modify (CHANGEABLE)
   
 });
 
