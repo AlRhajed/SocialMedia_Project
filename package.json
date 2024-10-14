@@ -1,0 +1,19 @@
+{
+  "name": "jswithmysql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "DevStart": "nodemon Server.js"
+     
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
