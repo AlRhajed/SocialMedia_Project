@@ -126,4 +126,13 @@ app.get('/ProfilePage', (req, res) =>{
     console.log('User has LoggedIn!')
 })
 
+app.post('/GoToHomePage', (req, res) =>{
+    res.render("users/HomePage")
+})
+
+app.post('/GoToProfilePage', (req, res) =>{
+    res.render('users/ProfilePage',{userNameText: loggedInName});
+    res.render("users/ProfilePage")
+})
+
 app.listen(3000);
